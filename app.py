@@ -25,7 +25,7 @@ with st.container():
 def get_lighting_plan(w, d, gear, style):
     genai.configure(api_key=api_key)
     # Using 'gemini-1.5-flash' for high speed and free tier stability
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
     Act as a Cinematographer. Create a lighting plan for a {w}x{d}m room.
