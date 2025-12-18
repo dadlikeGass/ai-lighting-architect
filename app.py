@@ -92,7 +92,8 @@ def get_lighting_plan(w, d, gear_list, style_name):
     
     # Using standard stable model
     # If this fails, try 'gemini-1.5-pro' or check API key permissions
-    model = genai.GenerativeModel('gemini-1.5-flash')
+  
+    model = genai.GenerativeModel('gemini-2.5-flash')
     
     prompt = f"""
     Act as a professional Cinematographer. Create a 2D lighting plan for a room {w}m wide x {d}m deep.
